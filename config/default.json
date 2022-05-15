@@ -1,0 +1,27 @@
+{
+    "nodeAddr":     "0.0.0.0",
+    "wsPort":       7771,
+    "startBlock":   0,
+    "endBlock":     "latest",
+    "quiet":        false,
+    "syncAll":      true,
+    "patch":        false,
+    "getLatestBlocksInterval": 500,
+    "patchBlocks":  100,
+    "bulkSize":     100,
+    "settings": {
+        "useRichList": true,
+        "useFiat": false
+    },
+    "defaultLanguage": "en",
+    "languages": {
+        "ru": "Русский",
+        "en": "English"
+    },
+    "validation": {
+        "maxCount": 30
+    },
+    "contractsAddresses": {
+        "sfc": "0xfc00face00000000000000000000000000000000"
+    }
+}

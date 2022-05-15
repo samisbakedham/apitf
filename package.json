@@ -1,0 +1,44 @@
+{
+  "name": "fantom-explorer",
+  "version": "0.0.1",
+  "description": "Fantom explorer",
+  "scripts": {
+    "api": "node ./bin/api",
+    "sync": "node ./bin/sync.js",
+    "stats": "node ./bin/stats.js",
+    "io": "node ./bin/socketIOServer.js",
+
+    "api-dev": "nodemon ./bin/api",
+    "sync-dev": "nodemon ./bin/sync.js",
+    "stats-dev": "nodemon ./bin/stats.js",
+    "io-dev": "nodemon ./bin/socketIOServer.js",
+    "io-client-dev": "nodemon ./bin/socketIOClient.js",
+
+    "test-api": "TEST_ENV=true mocha test/api/*.js --timeout 10000"
+  },
+  "dependencies": {
+    "async": "^3.1.0",
+    "config": "^3.2.4",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.2.0",
+    "express-validator": "^6.2.0",
+    "human-standard-token-abi": "^2.0.0",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.7.12",
+    "mongoose-paginate": "^5.0.3",
+    "morgan": "^1.9.1",
+    "node-fetch": "^2.6.0",
+    "request-promise": "^4.2.5",
+    "socket.io": "^2.3.0",
+    "web3": "^1.2.3",
+    "web3-explorer": "^1.0.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.2.2",
+    "nodemon": "^2.0.0",
+    "socket.io-client": "^2.3.0"
+  },
+  "author": ""
+}
